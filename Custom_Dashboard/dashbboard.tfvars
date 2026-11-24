@@ -1,4 +1,5 @@
 project_id   = "sisl-internal-alloydb-testing"
+region = "asia-south1"
 display_name = "403 Errors Dashboard"
 widget_title = "HTTP 403 errors"
 log_filter   = "httpRequest.status=403 OR protoPayload.status.code=7"

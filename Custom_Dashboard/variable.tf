@@ -10,30 +10,18 @@ variable "display_name" {
   type = string
 }
 
-variable "widget_title" {
-  type = string
-}
-
-variable "log_filter" {
-  type = string
-}
-
 variable "columns" {
   type = number
 }
 
-variable "x_pos" {
-  type = number
-}
-
-variable "y_pos" {
-  type = number
-}
-
-variable "width" {
-  type = number
-}
-
-variable "height" {
-  type = number
+variable "widgets" {
+  type = list(object({
+    type   = string
+    title  = string
+    filter = string
+    x_pos  = number
+    y_pos  = number
+    width  = number
+    height = number
+  }))
 }

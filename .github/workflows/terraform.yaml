@@ -40,8 +40,8 @@ jobs:
       run: terraform validate
 
     - name: Terraform Plan
-      run: terraform plan -input=false -var-file="dashboard.tfvars"
+      run: terraform plan -input=false -var-file="dashboard.tf"
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run: terraform apply -auto-approve -input=false -var-file="dashboard.tfvars"
+      run: terraform apply -auto-approve -input=false -var-file="dashboard.tf"

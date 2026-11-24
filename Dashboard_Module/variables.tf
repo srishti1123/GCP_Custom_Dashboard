@@ -1,40 +1,39 @@
 variable "project_id" {
-  type        = string
-  description = "Project where the dashboard is created and logs are read from"
+  type = string
+}
+
+variable "region" {
+  type = string
 }
 
 variable "display_name" {
-  type        = string
-  description = "Dashboard name shown in the console"
+  type = string
 }
 
 variable "widget_title" {
-  type        = string
-  description = "Title of the logs widget"
+  type = string
 }
 
 variable "log_filter" {
-  type        = string
-  description = "Cloud Logging filter used by the logs panel"
+  type = string
 }
 
 variable "columns" {
-  type        = number
-  description = "Number of grid columns in the dashboard"
+  type = number
 }
 
 variable "x_pos" {
-  type    = number
+  type = number
 }
 
 variable "y_pos" {
-  type    = number
+  type = number
 }
 
 variable "width" {
-  type    = number
+  type = number
 }
 
 variable "height" {
-  type    = number
+  type = number
 }

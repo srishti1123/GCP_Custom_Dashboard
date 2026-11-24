@@ -3,3 +3,8 @@ region       = "asia-south1"
 display_name = "403 Errors Dashboard"
 widget_title = "HTTP 403 errors"
 log_filter   = "httpRequest.status=403 OR protoPayload.status.code=7"
+columns = 12
+x_pos   = 0
+y_pos   = 0
+width   = 12
+height  = 8

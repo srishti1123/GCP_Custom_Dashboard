@@ -5,4 +5,9 @@ module "logs_403_dashboard" {
   display_name = var.display_name
   widget_title = var.widget_title
   log_filter   = var.log_filter
+  columns      = var.columns
+  x_pos        = var.x_pos
+  y_pos        = var.y_pos
+  width        = var.width
+  height       = var.height
 }

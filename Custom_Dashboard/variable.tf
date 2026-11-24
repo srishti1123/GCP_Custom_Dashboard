@@ -3,8 +3,7 @@ variable "project_id" {
 }
 
 variable "region" {
-  type    = string
-  default = "asia-south1"
+  type = string
 }
 
 variable "display_name" {
@@ -17,4 +16,24 @@ variable "widget_title" {
 
 variable "log_filter" {
   type = string
+}
+
+variable "columns" {
+  type = number
+}
+
+variable "x_pos" {
+  type = number
+}
+
+variable "y_pos" {
+  type = number
+}
+
+variable "width" {
+  type = number
+}
+
+variable "height" {
+  type = number
 }
